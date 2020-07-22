@@ -8,7 +8,7 @@ int main()
 {  
     
     int opc, edad; 
-    char respuesta1, respuesta2, respuesta3, respuesta4, sexo; 
+    char respuesta1, respuesta2, respuesta3, respuesta4, respuesta5,respuesta6, sexo; 
     char nombre[50];
     setlocale(LC_ALL,"Spanish");
     
@@ -18,6 +18,7 @@ int main()
     cout << "---1------NUEVA METODOLOGIA DE ESTUDIO UTH (ZOOM)--- " << endl;
     cout << "---2------TIENDA DE VIDEOJUEGOS MAX----------------- " << endl;
     cout << "---3----------------PANQUESITOS--------------------- " << endl;
+    cout << "---4------------------DOCENTES---------------------- " << endl;
     cout << "____________________________________________________ " << endl;
     cout << "**************************************************** " << endl;
 
@@ -41,7 +42,7 @@ int main()
             fflush(stdin);
             cout << " " << endl;
             cout << " " << endl;
-            cout << "1. Utilizas la aplicaci�n zoom " << endl;
+            cout << "1. Utilizas la aplicación zoom " << endl;
             cout << "1. Si\t\t\t 2. No" << endl;
             cin  >> respuesta1;
             fflush(stdin);
@@ -93,8 +94,8 @@ int main()
             cout << "a. si\t\tb. no\t\tc. aveces\t\td. nunca " << endl;
             cin  >>  respuesta1;
             fflush(stdin);
-            cout << "2. De que tama�o le gustarian los panquesitos " << endl;
-            cout << "a. grandes\t\tb. Medianos\t\tc. Peque�os " << endl;
+            cout << "2. De que tamaño le gustarian los panquesitos " << endl;
+            cout << "a. grandes\t\tb. Medianos\t\tc. Pequeños " << endl;
             cin  >> respuesta2;
             cout << "3. Que tipo de jalea le gustaria en su panquesito " << endl;
             cout << "a. fresa\t\tb. uva\t\tc. leche condensada\t\td. chocolate " << endl;
@@ -104,8 +105,45 @@ int main()
             cout << "a. lps.10\t\tb. lps.15\t\tc. lps.20 " << endl;
             cin  >> respuesta4;
             fflush(stdin);
-        break;
-        
+            break;
+            
+            case 4: 
+            cout << "----ENCUESTA PARA DOCENTES----: " << endl;
+            cout << "---------------------------: " << endl;
+            cout << "Digite su nombre: " << endl ;
+            cin >> nombre;
+            fflush(stdin);
+            cout << "Cúal es su edad:" << endl;
+            cin  >> edad;
+            fflush(stdin);
+            cout << "sexo:" << endl;
+            cin  >> sexo;
+            fflush(stdin);
+            cout << " " << endl;
+            cout << " " << endl;
+            cout << "1. ¿El personal de la institución comparten la misma visión? " << endl;
+            cout << "a. Desacuerdo\t\t\t b. Neutral\t\t\t c. De acuerdo" << endl;
+            cin  >> respuesta1;
+            fflush(stdin);
+            cout << "2. ¿El personal es imparcial en todas las tareas relacionadas?" << endl;
+            cout << "a. Desacuerdo\t\t\t b. Neutral\t\t\t c. De acuerdo" << endl;
+            cin  >> respuesta2;
+            fflush(stdin);
+            cout << "3. ¿El personal tiene sentido de pertenencia y responsabilidad?" << endl;
+            cout << "a. Desacuerdo\t\t\t b. Neutral\t\t\t c. De acuerdo" << endl;
+            cin  >> respuesta3;
+            fflush(stdin);
+            cout << "4. ¿El personal se reúne constantemente para formar ideas para un mejor aprendizaje?" << endl;
+            cout << "a. Desacuerdo\t\t\t b. Neutral\t\t\t c. De acuerdo" << endl;
+            cin  >> respuesta4;
+            fflush(stdin);
+            cout << "5. ¿Estás satisfecho con la remuneración que recibes como docente?" << endl;
+            cout << "a. Desacuerdo\t\t\t b. Neutral\t\t\t c. De acuerdo" << endl;
+            cin  >> respuesta5;
+            cout << "6. ¿El personal y los estudiantes están compremetidos con los valores de la universidad?" << endl;
+            cout << "a. Desacuerdo\t\t\t b. Neutral\t\t\t c. De acuerdo" << endl;
+            cin  >> respuesta6;
+            break;
         default:
         break;
     }
