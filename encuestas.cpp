@@ -143,6 +143,7 @@ int main()
             cout << "6. ¿El personal y los estudiantes están compremetidos con los valores de la universidad?" << endl;
             cout << "a. Desacuerdo\t\t\t b. Neutral\t\t\t c. De acuerdo" << endl;
             cin  >> respuesta6;
+            
             break;
         default:
         break;
